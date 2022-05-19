@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import CounterContext from "../Context";
+import UserContext from "../Context";
 import Table from "../Components/Table";
 
 const UmHome = () => {
-  const { state } = useContext(CounterContext);
+  const { state } = useContext(UserContext);
   return (
     <>
       <h1>UmHome</h1>
