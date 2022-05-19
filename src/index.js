@@ -9,6 +9,7 @@ import Header from "./Header";
 import Home from "./Home";
 import ProviderRoutes from "./Provider/Routes";
 import ContextApiProviderRoutes from "./ContextApiProvider/Routes";
+import UserManagementRoutes from "./UserManagement/Routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,7 +21,8 @@ root.render(
         <Route path="ctx/*" element={<ContextApiRoutes />} />
         <Route path="pvd" element={<ProviderRoutes />} />
         <Route path="ctp/*" element={<ContextApiProviderRoutes />} />
-        <Route path="/rdx/*" element={<ReduxRoutes />} />
+        <Route path="um/*" element={<UserManagementRoutes />} />
+        <Route path="rdx/*" element={<ReduxRoutes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

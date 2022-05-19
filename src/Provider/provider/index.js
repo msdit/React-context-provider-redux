@@ -1,11 +1,11 @@
-export const initialState = { count: 0 };
+export const initialState = { count: 0, key: "value" };
 
 export function reducer(state, action) {
   switch (action.type) {
     case "increment":
-      return { count: state.count + 1 };
+      return { ...state, count: state.count + Number(action.payload) };
     case "decrement":
-      return { count: state.count - 1 };
+      return { ...state, count: state.count - Number(action.payload) };
     default:
       throw new Error();
   }
